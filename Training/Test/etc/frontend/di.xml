@@ -5,7 +5,7 @@
     <type name="Magento\Framework\View\Element\Template">
         <plugin name="TrainingTestPluginBlockTemplate" type="Training\Test\Plugin\Block\Template"/>
     </type>
-    <type name="Magento\Catalog\Controller\Product\View">
+    <type name="Magento\Catalog\Controller\Product">
         <plugin name="TrainingTestPluginControllerProductView" type="Training\Test\Plugin\Controller\Product\View"/>
     </type>
 </config>
