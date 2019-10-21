@@ -6,6 +6,6 @@
         <plugin name="TrainingTestPluginBlockTemplate" type="Training\Test\Plugin\Block\Template"/>
     </type>
     <type name="Magento\Catalog\Controller\Product">
-        <plugin name="TrainingTestPluginControllerProductView" type="Training\Test\Plugin\Controller\Product\View"/>
+        <plugin name="TrainingTestPluginControllerProductView" type="Training\Test\Plugin\Controller\Product\View" disabled="true"/>
     </type>
 </config>
