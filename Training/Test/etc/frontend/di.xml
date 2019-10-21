@@ -2,4 +2,7 @@
     <type name="Magento\Framework\UrlInterface">
         <plugin name="TrainingTestPluginModelUrl" type="Training\Test\Plugin\Model\Url"/>
     </type>
+    <type name="Magento\Framework\View\Element\Template">
+        <plugin name="TrainingTestPluginBlockTemplate" type="Training\Test\Plugin\Block\Template"/>
+    </type>
 </config>
