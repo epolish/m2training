@@ -24,6 +24,7 @@ class Index extends \Magento\Framework\App\Action\Action
         $layout = $this->layoutFactory->create();
         $resultRaw = $this->resultRawFactory->create();
         $block = $layout->createBlock(\Training\Test\Block\Test::class);
+        $block->setTemplate('test.phtml');
 
         return $resultRaw->setContents($block->toHtml());
     }
