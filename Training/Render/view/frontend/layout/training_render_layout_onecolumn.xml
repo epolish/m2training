@@ -5,5 +5,12 @@
             <argument translate="true" name="title" xsi:type="string">Thank you for your purchase!</argument>
         </action>
     </referenceBlock>
+    <referenceContainer name="content">
+        <block name="test_form" template="Training_Render::form.phtml">
+            <arguments>
+                <argument name="view_model_form" xsi:type="object">Training\Render\ViewModel\Form</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
     <referenceBlock name="testargument" remove="true"/>
 </page>

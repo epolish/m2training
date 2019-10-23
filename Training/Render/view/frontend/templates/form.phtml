@@ -1,0 +1,11 @@
+<?php
+/** @var \Training\Render\ViewModel\Form $viewModelForm */
+
+$viewModelForm = $block->getViewModelForm();
+?>
+<div>
+    <form action="<?= $viewModelForm->getSubmitUrl() ?>" method="post">
+        <input type="text" name="test_name"/>
+        <input type="submit"/>
+    </form>
+</div>
