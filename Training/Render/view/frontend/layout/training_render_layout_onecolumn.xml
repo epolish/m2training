@@ -5,4 +5,5 @@
             <argument translate="true" name="title" xsi:type="string">Thank you for your purchase!</argument>
         </action>
     </referenceBlock>
+    <referenceBlock name="testargument" remove="true"/>
 </page>
