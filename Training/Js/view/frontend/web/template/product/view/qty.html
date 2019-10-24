@@ -1,0 +1,12 @@
+<div class="box-tocart">
+    <div class="fieldset">
+        <div class="actions">
+            <button class="action primary tocart" data-bind="click: showAvailableQty, attr: {disabled: isDisabledButton}">
+                <span data-bind="i18n: 'Show available quantity'"></span>
+                <!-- ko if: currentQty -->
+                    (<span data-bind="text: currentQty"></span>)
+                <!-- /ko -->
+            </button>
+        </div>
+    </div>
+</div>
