@@ -64,4 +64,14 @@ class FeedbackList extends \Magento\Framework\View\Element\Template
     {
         return $this->timezone->formatDateTime($feedback->getCreationTime());
     }
+
+    public function getAllFeedbackNumber()
+    {
+        return $this->getFeedbackCollection()->getAllFeedbackNumber();
+    }
+
+    public function getActiveFeedbackNumber()
+    {
+        return $this->getFeedbackCollection()->getActiveFeedbackNumber();
+    }
 }
