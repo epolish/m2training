@@ -32,6 +32,8 @@ class AddProductsToFeedback
         \Training\Feedback\Ui\DataProvider\Form\DataProvider $subject,
         $result
     ) {
+        $result = $result ?: [];
+
         if (count($result) > 0) {
             foreach ($result as $index => $feedbackData) {
                 try {

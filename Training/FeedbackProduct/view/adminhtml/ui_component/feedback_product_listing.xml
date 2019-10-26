@@ -2,8 +2,7 @@
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
-            <item name="provider"
-                  xsi:type="string">feedback_product_listing.feedback_product_listing_data_source</item>
+            <item name="provider" xsi:type="string">feedback_product_listing.feedback_product_listing_data_source</item>
         </item>
     </argument>
     <settings>
@@ -20,8 +19,7 @@
             <updateUrl path="mui/index/render"/>
         </settings>
         <aclResource>Magento_Catalog::products</aclResource>
-        <dataProvider class="Training\FeedbackProduct\Ui\DataProvider\Form\FeedbackProduct\DataProvider"
-                      name="feedback_product_listing_data_source">
+        <dataProvider class="Training\FeedbackProduct\Ui\DataProvider\Form\FeedbackProduct\DataProvider" name="feedback_product_listing_data_source">
             <settings>
                 <requestFieldName>id</requestFieldName>
                 <primaryFieldName>entity_id</primaryFieldName>
@@ -36,8 +34,7 @@
                         <item name="filters_modifier" xsi:type="array"/>
                     </item>
                     <item name="observers" xsi:type="array">
-                        <item name="filters"
-                              xsi:type="object">Magento\Catalog\Ui\Component\Listing\Filters</item>
+                        <item name="filters" xsi:type="object">Magento\Catalog\Ui\Component\Listing\Filters</item>
                     </item>
                 </item>
             </argument>
@@ -74,8 +71,7 @@
                 <sorting>asc</sorting>
             </settings>
         </column>
-        <column name="thumbnail" class="Magento\Catalog\Ui\Component\Listing\Columns\Thumbnail"
-                component="Magento_Ui/js/grid/columns/thumbnail" sortOrder="20">
+        <column name="thumbnail" class="Magento\Catalog\Ui\Component\Listing\Columns\Thumbnail" component="Magento_Ui/js/grid/columns/thumbnail" sortOrder="20">
             <settings>
                 <altField>name</altField>
                 <hasPreview>1</hasPreview>

@@ -11,16 +11,17 @@
                 <class name="admin__field-section">true</class>
             </additionalClasses>
         </settings>
-        <container name="assign_feedback_products_container" template="ui/form/components/complex"
-                   sortOrder="10">
+        <container name="assign_feedback_products_container" template="ui/form/components/complex" sortOrder="10">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="formElement" xsi:type="string">container</item>
                     <item name="breakLine" xsi:type="boolean">false</item>
                     <item name="dataScope" xsi:type="string" />
                     <item name="label" xsi:type="string" />
-                    <item name="content" xsi:type="string">Feedback can be associated with one or several
-                        products. This can give possibility to leave one comment for group of products.</item>
+                    <item name="content" xsi:type="string">
+                        Feedback can be associated with one or several
+                        products. This can give possibility to leave one comment for group of products.
+                    </item>
                 </item>
             </argument>
             <button name="assign_feedback_products_button" template="ui/form/components/button/container">
@@ -34,19 +35,11 @@
                         <item name="breakLine" xsi:type="boolean">false</item>
                         <item name="actions" xsi:type="array">
                             <item name="0" xsi:type="array">
-                                <item name="targetName"
-
-                                      xsi:type="string">training_feedback_form.training_feedback_form.feedback_products.assign_feedback_products_mod
-                                    al</item>
-
+                                <item name="targetName" xsi:type="string">training_feedback_form.training_feedback_form.feedback_products.assign_feedback_products_modal</item>
                                 <item name="actionName" xsi:type="string">toggleModal</item>
                             </item>
                             <item name="1" xsi:type="array">
-                                <item name="targetName"
-
-                                      xsi:type="string">training_feedback_form.training_feedback_form.feedback_products.assign_feedback_products_mod
-                                    al.assign_feedback_products_grid</item>
-
+                                <item name="targetName" xsi:type="string">training_feedback_form.training_feedback_form.feedback_products.assign_feedback_products_modal.assign_feedback_products_grid</item>
                                 <item name="actionName" xsi:type="string">render</item>
                             </item>
                         </item>
@@ -54,9 +47,7 @@
                 </argument>
             </button>
         </container>
-        <dynamicRows name="assigned_feedback_products"
-                     component="Magento_Ui/js/dynamic-rows/dynamic-rows-grid"
-                     template="ui/dynamic-rows/templates/grid" sortOrder="20">
+        <dynamicRows name="assigned_feedback_products" component="Magento_Ui/js/dynamic-rows/dynamic-rows-grid" template="ui/dynamic-rows/templates/grid" sortOrder="20">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="dataProvider" xsi:type="string">feedback_product_listing</item>
@@ -183,10 +174,7 @@
                             <item name="class" xsi:type="string">action-primary</item>
                             <item name="actions" xsi:type="array">
                                 <item name="0" xsi:type="array">
-                                    <item name="targetName" xsi:type="string">index =
-
-                                        assign_feedback_products_grid</item>
-
+                                    <item name="targetName" xsi:type="string">index = assign_feedback_products_grid</item>
                                     <item name="actionName" xsi:type="string">save</item>
                                 </item>
                                 <item name="1" xsi:type="array">
@@ -211,7 +199,6 @@
                     <ns>feedback_product_listing</ns>
                     <externalProvider>feedback_product_listing.feedback_product_listing_data_source</externalProvider>
                     <selectionsProvider>feedback_product_listing.feedback_product_listing.product_columns.ids</selectionsProvider>
-
                     <realTimeLink>true</realTimeLink>
                     <dataLinks>
                         <imports>false</imports>

@@ -2,8 +2,7 @@
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
-            <item name="provider"
-                  xsi:type="string">training_feedback_form.training_feedback_form_data_source</item>
+            <item name="provider" xsi:type="string">training_feedback_form.training_feedback_form_data_source</item>
         </item>
         <item name="label" xsi:type="string" translate="true">General Information</item>
         <item name="template" xsi:type="string">templates/form/collapsible</item>
@@ -28,8 +27,7 @@
         <settings>
             <submitUrl path="training_feedback/index/save"/>
         </settings>
-        <dataProvider class="Training\Feedback\Ui\DataProvider\Form\DataProvider"
-                      name="training_feedback_form_data_source">
+        <dataProvider class="Training\Feedback\Ui\DataProvider\Form\DataProvider" name="training_feedback_form_data_source">
             <settings>
                 <requestFieldName>feedback_id</requestFieldName>
                 <primaryFieldName>feedback_id</primaryFieldName>
