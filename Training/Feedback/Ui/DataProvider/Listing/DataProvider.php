@@ -19,8 +19,6 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      * @param string $name
      * @param string $primaryFieldName
      * @param string $requestFieldName
-    © 2018 M2Training.com.ua 5
-
      * @param CollectionFactory $collectionFactory
      * @param array $meta
      * @param array $data
